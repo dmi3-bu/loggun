@@ -11,4 +11,9 @@ RSpec.configure do |config|
   config.expect_with :rspec do |c|
     c.syntax = :expect
   end
+
+  require File.expand_path('../spec/dummy/config/environment.rb', __dir__)
+  ENV['RAILS_ROOT'] ||= File.dirname(__FILE__) + '../../../spec/dummy'
+
+  require 'rspec/rails'
 end

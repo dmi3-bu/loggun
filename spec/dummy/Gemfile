@@ -5,6 +5,8 @@ gemspec(path: "../../")
 
 ruby '2.6.5'
 gem 'rails'
+gem 'sidekiq'
+gem 'sidekiq-failures'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]

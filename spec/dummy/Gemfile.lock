@@ -1,7 +1,7 @@
 PATH
   remote: ../..
   specs:
-    loggun (0.4.1)
+    loggun (0.6.0)
 
 GEM
   remote: https://rubygems.org/
@@ -176,6 +176,8 @@ GEM
       rack (~> 2.0)
       rack-protection (>= 2.0.0)
       redis (>= 4.1.0)
+    sidekiq-failures (1.0.0)
+      sidekiq (>= 4.0.0)
     spring (2.1.0)
     spring-watcher-listen (2.0.1)
       listen (>= 2.7, < 4.0)
@@ -213,7 +215,8 @@ DEPENDENCIES
   rake (~> 13.0)
   rspec (~> 3.0)
   rspec-rails
-  sidekiq (~> 6.0)
+  sidekiq
+  sidekiq-failures
   spring
   spring-watcher-listen (~> 2.0.0)
 
